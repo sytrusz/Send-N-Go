@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #456;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main b {
+  color: #28d;
+}
+
+.main p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.main a {
+  color: #28d;
+  text-decoration: none;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}

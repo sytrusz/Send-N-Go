@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background: #34495e;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.formBG {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+  
+  .formBG form {
+    width: 100%;
+  }
+  
+  .formBG form .inputBx {
+    margin-top: 20px;
+  }
+  
+  .formBG form .inputBx input[type="submit"] {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .formBG a {
+    display: block;
+    margin-top: 20px;
+    color: #16abf0;
+    text-decoration: none;
+  }
+  
+  .formBG a:hover {
+    text-decoration: underline;
+  }
+  
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+a {
+  color: inherit;
+}
+
+.floating-form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 16px;
+  line-height: 2.6em;
+  height: 2.6em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  transition: border-bottom-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-bottom-color: #16abf0;
+}
+
+.floating-placeholder {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floating-placeholder label {
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  font-size: 16px;
+  color: #999;
+  transition: bottom 0.3s, font-size 0.3s, color 0.3s;
+}
+
+input[type="text"]:focus + label,
+input[type="password"]:focus + label,
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="password"]:not(:placeholder-shown) + label {
+  bottom: 28px;
+  font-size: 12px;
+  color: #16abf0;
+}
+
+.inputBx input[type="submit"] {
+    box-sizing: border-box;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.85em;
+    background: #28d;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .inputBx input[type="submit"]:hover {
+    background: #17c;
+  }
+  
+  .inputBx input[type="submit"]:focus {
+    border-color: #05a;
+  }
+  

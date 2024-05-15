@@ -27,6 +27,15 @@
   <meta name="viewport" content="width=device-width">
   <link href="style/index.css" type="text/css" rel="stylesheet"/>
   <title>Main Page</title>
+  
+  <script type="text/javascript">
+    function confirmLogout() {
+        var result = confirm("Are you sure you want to logout?");
+        if (result) {
+            window.location.href = 'logout.php';
+        }
+    }
+    </script>
 </head>
 <body>
   <div class="main">
@@ -36,7 +45,7 @@
 	<hr /><br>
     <a href="insert.php">Insert Row</a><br>
     <a href="display.php">Display</a><br>
-    <a href="logout.php">Log Out</a>
+    <a href="#" onclick="confirmLogout()">Logout</a>
   </div>
 </body>
 </html>

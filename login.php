@@ -22,7 +22,7 @@
             </script>";
       } else {
         $_SESSION['uname'] = $row[0];
-        header("location: main.php");
+        header("location: index.php");
       }
     }
   }

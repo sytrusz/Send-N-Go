@@ -8,11 +8,9 @@ if (!isset($_SESSION['uname'])) {
 $con= mysqli_connect("localhost","root","","sendngo") 
     or die("Error in connection");
 
-// Check if SupplierID is provided in the URL
 if(isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Fetch the row to be updated based on SupplierID
     $sql = "SELECT * FROM supplier WHERE SupplierID = ?";
     $stmt = mysqli_prepare($con, $sql);
     mysqli_stmt_bind_param($stmt, "i", $id);
@@ -22,11 +20,11 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     if(!$row) {
         echo "Invalid SupplierID provided.";
-        exit; // Stop further execution
+        exit;
     }
 } else {
     echo "No SupplierID provided.";
-    exit; // Stop further execution
+    exit;
 }
 
 if (isset($_POST['btnUpdate'])) {
@@ -37,7 +35,6 @@ if (isset($_POST['btnUpdate'])) {
     $province = $_POST['txtProvince'];
     $pwd = $_POST['txtPwd'];
 
-    // Update the row with the provided SupplierID
     $sql = "UPDATE supplier SET SupplierID=?, Name=?, Street=?, City=?, Province=?, password=? WHERE SupplierID=?";
     $updateStmt = mysqli_prepare($con, $sql);
     mysqli_stmt_bind_param($updateStmt, 'isssssi', $supplierID, $uname, $street, $city, $province, $pwd, $id);

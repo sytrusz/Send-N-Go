@@ -60,7 +60,7 @@ mysqli_free_result($result);
     </table><br>
     
     <br />
-    <a href="main.php">Return to Main</a>
+    <a href="index.php">Return to Main</a>
     </div>
 </body>
 </html>

@@ -37,7 +37,7 @@
       </div>
     </form>
     <br />
-    <a href="main.php">Return to Main</a>
+    <a href="index.php">Return to Main</a>
   </div>
 </body>
 </html>

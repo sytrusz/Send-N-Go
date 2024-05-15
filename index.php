@@ -25,7 +25,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link href="style/main.css" type="text/css" rel="stylesheet"/>
+  <link href="style/index.css" type="text/css" rel="stylesheet"/>
   <title>Main Page</title>
 </head>
 <body>

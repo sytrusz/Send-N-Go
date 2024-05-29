@@ -19,11 +19,15 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])) {
     $row = mysqli_fetch_array($res);
 
     if(!$row) {
-        echo "Invalid SupplierID provided.";
+        echo "<script language='javascript'>
+              Invalid SupplierID or SupplierID already exists.
+              </script>";
         exit;
     }
 } else {
-    echo "No SupplierID provided.";
+    echo "<script language='javascript'>
+          No SupplierID provided.
+          </script>";
     exit;
 }
 
@@ -46,7 +50,7 @@ if (isset($_POST['btnUpdate'])) {
               </script>";
     } else {
         echo "<script language='javascript'>
-              alert('Failed to update record');
+              alert('Failed to update record\nID already existing!');
               </script>";
     }
     mysqli_stmt_close($updateStmt);
